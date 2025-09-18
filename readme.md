@@ -28,8 +28,8 @@ Usa o modelo **faster-whisper** para transcrever áudio após conversão para WA
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/SEU-USUARIO/NOME-REPO.git
-cd NOME-REPO
+git clone https://github.com/lKiMl0213/Transcriptor.git
+cd Transcriptor
 ```
 
 2. Crie e ative um ambiente virtual:
