@@ -45,11 +45,10 @@ python -m venv .venv
 ```
 
 3. Instale dependências:
-- Se você já tem um `requirements.txt`, rode:
 ```bash
 pip install -r requirements.txt
 ```
-- Se preferir instalar manualmente, exemplo:
+- Se preferir instalar manualmente:
 ```bash
 pip install fastapi uvicorn faster-whisper ffmpeg-python python-multipart aiofiles
 ```
@@ -63,34 +62,15 @@ Se não aparecer, instale o FFmpeg (veja abaixo como instalar em Linux/Windows/m
 
 ---
 
-## Arquivo `requirements.txt` (exemplo)
-
-Conteúdo sugerido (salve como `requirements.txt`):
-```
-fastapi
-uvicorn[standard]
-faster-whisper
-ffmpeg-python
-python-multipart
-aiofiles
-```
-
-Para gerar a partir do seu ambiente (após instalar libs):
-```bash
-pip freeze > requirements.txt
-```
-
----
-
 ## Executando o servidor
 
-Rode (no diretório onde está `server.py`):
+Rode (no diretório onde está `audiototext.py`):
 ```bash
-uvicorn server:app --reload --host 0.0.0.0 --port 8000
+uvicorn audiototext:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 Endpoints principais:
-- `GET /` → retorna `frontend/index.html` (ou `http://localhost:8000/static/index.html`).
+- `GET /` → retorna `frontend/index.html` (ou `http://localhost:8000/index.html`).
 - `POST /transcribe` → envia arquivo (`multipart/form-data`, campo `audio`) e recebe JSON `{ "text": "..." }`.
 <!-- EM BREVE - `POST /stop` → solicita parada da transcrição atual; retorna status. -->
 
