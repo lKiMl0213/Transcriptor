@@ -1,7 +1,7 @@
 # Whisper Transcription Server
 
 Sistema de transcrição de áudio com **FastAPI** (backend) + frontend simples (HTML/CSS/JS).  
-Usa o modelo **faster-whisper** para transcrever áudio após conversão para WAV via FFmpeg. Suporta cancelamento de transcrições em andamento.
+Usa o modelo **faster-whisper** para transcrever áudio após conversão para WAV via FFmpeg. <!-- EM BREVE - Suporta cancelamento de transcrições em andamento. -->
 
 ---
 
