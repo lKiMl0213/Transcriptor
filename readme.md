@@ -10,7 +10,7 @@ Usa o modelo **faster-whisper** para transcrever áudio após conversão para WA
 - Upload de arquivos de áudio (qualquer formato suportado pelo FFmpeg).
 - Conversão automática para **WAV mono 16kHz** antes da transcrição.
 - Transcrição com `faster-whisper` (ex.: `large-v2`).
-- Endpoint para **interromper** transcrição em execução.
+<!-- EM BREVE - Endpoint para **interromper** transcrição em execução. -->
 - Frontend básico que mostra nome do arquivo e transcrição em balões.
 - Opção de expor a aplicação com **ngrok** para testes externos.
 
